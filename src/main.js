@@ -16,6 +16,9 @@ import './assets/styles/custom.scss'
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
+import VueSwal from 'vue-swal'
+Vue.use(VueSwal);
+
 // import axios configuration API
 
 import axios from "./services/Api";
@@ -38,6 +41,10 @@ Vue.use(Notifications);
 // vuenoty
 import VueNoty from 'vuejs-noty'
 Vue.use(VueNoty, {theme: 'sunset'});
+
+//vue-moment
+import moment from 'moment'
+Vue.prototype.moment = moment ;
 
 new Vue({
   el: '#app',

@@ -3,6 +3,7 @@
  */
 import VueRouter from "vue-router";
 import ProductSearch from "../components/ProductSearch";
+import AgentOrders from "../components/AgentOrders";
 import Login from "../components/Login";
 import { store } from '../store/store'
 //import Cart from "../components/Cart";
@@ -43,8 +44,15 @@ const routes = [
         meta:{
             title: 'AdminClient | PriceQuery',
             requiresAuth: true,
+        path: '/orders',
+        name: 'orders',
+        component: AgentOrders,
+        meta: {
+            title: 'orders | PriceQuery',
         }
     }
+
+
 ];
 
 
