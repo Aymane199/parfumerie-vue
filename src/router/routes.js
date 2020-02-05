@@ -41,9 +41,12 @@ const routes = [
         path:'/AdminClient',
         name:'AdminClient',
         component:AdminClient,
-        meta:{
+        meta: {
             title: 'AdminClient | PriceQuery',
             requiresAuth: true,
+        }
+    },
+    {
         path: '/orders',
         name: 'orders',
         component: AgentOrders,
@@ -51,8 +54,6 @@ const routes = [
             title: 'orders | PriceQuery',
         }
     }
-
-
 ];
 
 
