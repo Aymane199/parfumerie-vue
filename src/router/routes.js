@@ -8,6 +8,7 @@ import Login from "../components/Login";
 import { store } from '../store/store'
 //import Cart from "../components/Cart";
 import ProductCart from "../components/ProductCart";
+import AdminClient from "../components/AdminClient";
 
 const routes = [
     { path: '/', redirect: '/dashboard' },
@@ -37,6 +38,12 @@ const routes = [
         }
     },
     {
+        path:'/AdminClient',
+        name:'AdminClient',
+        component:AdminClient,
+        meta:{
+            title: 'AdminClient | PriceQuery',
+            requiresAuth: true,
         path: '/orders',
         name: 'orders',
         component: AgentOrders,
